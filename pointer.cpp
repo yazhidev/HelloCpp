@@ -93,12 +93,18 @@ void params_transfer()
 
 void main_pointer()
 {
-    using_pointer();
+//    using_pointer();
 //   func(nullptr); //nullptr 可以转换为任意指针类型和bool
 //    func(0);
-    params_transfer();
+//    params_transfer();
 
-    ListNode a(10);
-    ListNode b(20, &a);
-    testListNode(&b);
+//    ListNode a(10);
+//    ListNode b(20, &a);
+//    testListNode(&b);
+    auto a = new ListNode(1);
+    ListNode b(2);
+    auto b2 = b;
+    cout << a << endl;
+    cout << a->val << endl;
+//    ListNode* test =
 }
